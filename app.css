@@ -404,7 +404,7 @@ input[type="checkbox"] {
   font-weight: 600;
 }
 
-/* Mobile */
+/* Medium size screen */
 @media (max-width: 768px) {
   .logo-desktop {
     display: none;
@@ -441,7 +441,7 @@ input[type="checkbox"] {
   }
 }
 
-/* Tablet */
+/* small device */
 @media (max-width: 520px) {
   .drop-down--content--description {
     flex-direction: column;
