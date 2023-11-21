@@ -275,6 +275,10 @@ progress::-webkit-progress-value {
 
 .drop-down--toggle {
   cursor: pointer;
+  display: inline;
+  height: fit-content;
+  width: fit-content;
+  font-size: 1.8rem;
 }
 
 .drop-down--content {
