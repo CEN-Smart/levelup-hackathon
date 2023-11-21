@@ -62,7 +62,7 @@ button {
   border-radius: 0.8rem;
   flex: 0 0 50%;
   box-shadow: 0 -2px 0 rgba(0 0 0/0.15);
-  transition: box-shadow 0.3s ease;
+  transition: 0.5s;
 }
 
 /* hover state */
@@ -101,7 +101,7 @@ button {
   display: flex;
   align-items: center;
   gap: 1rem;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .user-notify {
@@ -141,14 +141,14 @@ button {
   justify-content: center;
   border-radius: 0.5rem;
   flex-shrink: 0;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .user-profile {
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .user-profile:hover .user-name,
@@ -204,7 +204,7 @@ button {
   font-size: 1.4rem;
   border-radius: 0.8rem;
   flex-shrink: 0;
-  transition: all 0.3s;
+  transition: 0.5s;
   margin-left: auto;
   margin-right: 2rem;
 }
@@ -286,7 +286,7 @@ progress::-webkit-progress-value {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .drop-down--content.active {
@@ -330,7 +330,7 @@ progress::-webkit-progress-value {
   -webkit-transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .drop-down--content--title {
@@ -354,7 +354,7 @@ progress::-webkit-progress-value {
   color: #e7e7e7;
   font-size: 1.4rem;
   border-radius: 0.8rem;
-  transition: all 0.3s;
+  transition: 0.5s;
   box-shadow: 0 4px 10px rgba(0 0 0/0.2);
   flex-shrink: 0;
 }
@@ -397,7 +397,7 @@ input[type="checkbox"] {
   display: inline-block;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .dotted-checkbox:hover {
@@ -434,7 +434,7 @@ input[type="checkbox"] {
   padding-top: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .checked.active .dotted-checkbox {
@@ -456,7 +456,7 @@ input[type="checkbox"] {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .overlay.active {
@@ -482,7 +482,7 @@ input[type="checkbox"] {
   pointer-events: none;
   transform: translateY(-100%);
   pointer-events: none;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 .menu-lg {
   height: 80vh;
@@ -518,7 +518,7 @@ input[type="checkbox"] {
   cursor: pointer;
   padding: 0.4rem;
   border-radius: 0.8rem;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 /* Onhover */
@@ -589,7 +589,7 @@ input[type="checkbox"] {
   padding: 1rem;
   margin-top: -1.5rem;
   border-radius: 0.8rem;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 
 .menu-link:hover,
