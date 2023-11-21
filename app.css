@@ -106,13 +106,18 @@ button {
 
 .user-notify {
   background-color: #303030;
-  padding: 0.6rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: fit-content;
+  transition: 0.5s;
   cursor: pointer;
+}
+
+.user-notify:hover {
+  background-color: #616161;
 }
 
 .user-notify .notify-icon {
@@ -123,8 +128,6 @@ button {
 
 .user-name {
   color: #fff;
-  background-color: #303030;
-  border-radius: 0.5rem;
   padding: 0.6rem 1rem;
   font-weight: 300;
   font-size: 1.4rem;
@@ -148,9 +151,15 @@ button {
   display: flex;
   align-items: center;
   cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: #303030;
   transition: 0.5s;
 }
 
+.user-profile:hover {
+  background-color: #616161;
+}
+/* 
 .user-profile:hover .user-name,
 .user-profile:active .user-name {
   background-color: #616161;
@@ -161,7 +170,7 @@ button {
 .user-profile:hover .user-avatar,
 .user-profile:active .user-avatar {
   margin: 0 0 0 -1rem;
-}
+} */
 
 /* Main */
 /* Select Plan */
@@ -175,7 +184,7 @@ button {
   width: 70%;
   margin: 0 auto;
   border-radius: 0.8rem;
-  padding: 2rem;
+  padding: 1.4rem 2rem;
   color: #e3e3e3;
   display: flex;
   justify-content: space-between;
@@ -198,6 +207,7 @@ button {
 
 .btn-select {
   background-color: #fff;
+  box-shadow: 0px -1px 0px 0px rgba(181, 181, 181, 1) inset;
   padding: 1rem 2rem;
   font-weight: 600;
   color: #1a1a1a;
@@ -212,11 +222,11 @@ button {
 .btn-select:hover,
 .btn-select:active {
   background-color: #e7e7e7;
-  transform: scale(1.1);
+  box-shadow: 0px -1px 0px 0px rgba(181, 181, 181, 1) inset;
 }
 
 .btn-select:active {
-  transform: scale(0.9);
+  transform: scale(0.98);
 }
 
 /* drop down */
@@ -355,20 +365,20 @@ progress::-webkit-progress-value {
   font-size: 1.4rem;
   border-radius: 0.8rem;
   transition: 0.5s;
-  box-shadow: 0 4px 10px rgba(0 0 0/0.2);
+  box-shadow: 0px 0px 0px 1.5px rgba(51, 51, 51, 1),
+    0px 1px 0px 1.5px rgba(51, 51, 51, 1), 0px 2px 0px 0px rgba(0, 0, 0, 1);
   flex-shrink: 0;
 }
 
 .drop-down--btn:hover,
 .drop-down--btn:active {
   background-color: #2a2a2a;
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0 0 0/0.4);
+  box-shadow: 0px 0px 0px 1.5px rgba(51, 51, 51, 1),
+    0px 1px 0px 1.5px rgba(51, 51, 51, 1), 0px 2px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .drop-down--btn:active {
-  transform: scale(0.9);
-  box-shadow: 0 4px 10px rgba(0 0 0/0.1);
+  transform: scale(0.98);
 }
 
 .btn-group {
