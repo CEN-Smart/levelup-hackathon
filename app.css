@@ -479,6 +479,11 @@ input[type="checkbox"] {
     width: 100%;
   }
 
+  .container,
+  .plan {
+    width: 100%;
+  }
+
   .btn-group {
     flex-direction: column;
     width: 100%;
@@ -490,11 +495,6 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 1120px) {
-  .container,
-  .plan {
-    width: 90%;
-  }
-
   .drop-down--content--description {
     height: auto;
   }
