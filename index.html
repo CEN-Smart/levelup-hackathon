@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>The Level Up Front Hackathon</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="nav">
+        <a href="/" class="logo-desktop">
+          <img
+            src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg"
+            alt="Shopify"
+          />
+        </a>
+        <a href="/" class="logo-mobile">
+          <img
+            src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
+            alt="Shopify"
+          />
+        </a>
+        <div class="search">
+          <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          <input type="search" name="search" id="search" placeholder="Search" />
+        </div>
+        <div class="user">
+          <div class="user-notify">
+            <ion-icon
+              class="notify-icon"
+              name="notifications-outline"
+            ></ion-icon>
+          </div>
+          <div class="user-profile">
+            <div class="user-name">Davii Collections</div>
+            <div class="user-avatar">DC</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Select Plan -->
+
+    <section class="select-plan">
+      <div class="plan">
+        <div class="select">
+          <p class="plan-title">
+            Extend your trial for $1/month for 3 months on select plans.
+          </p>
+          <button class="btn-select">Select a plan</button>
+        </div>
+        <ion-icon class="close" name="close-outline"></ion-icon>
+      </div>
+    </section>
+
+    <main class="drop-down">
+      <div class="container">
+        <div class="drop-down--container">
+          <div class="drop-down--header">
+            <h2 class="drop-down--title">Setup guide</h2>
+            <p class="drop-down--description">
+              Use this personalized guide to get your store up and running.
+            </p>
+            <p class="drop-down--progress">
+              <span> 1&nbsp;/&nbsp;5 completed </span>
+              <!-- html progress tag -->
+              <progress class="progress" min="1" max="5" value="1"></progress>
+            </p>
+          </div>
+          <div class="drop-down--toggle">
+            <ion-icon class="chevron-up" name="chevron-up-outline"></ion-icon>
+            <ion-icon
+              class="chevron-down"
+              name="chevron-down-outline"
+            ></ion-icon>
+          </div>
+        </div>
+        <!-- drop down -->
+        <div class="drop-down--content">
+          <div class="drop-down--content--container">
+            <!-- item 1 -->
+            <div class="drop-down--content--item">
+              <div class="drop-down--select-item">
+                <div class="checked">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                  />
+                  <label for="checkbox" class="custom-checkbox">
+                    <span class="dotted-checkbox"></span>
+                    <img
+                      class="checkmark"
+                      src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg"
+                      alt="Checkmark"
+                    />
+                  </label>
+                  <h3 class="drop-down--content--title">
+                    Customize your online store
+                  </h3>
+                </div>
+
+                <div class="drop-down--content--description">
+                  <div class="drop-down--text">
+                    <p>
+                      Choose a theme and add your logo, colors, and images to
+                      reflect your brand.
+                      <a class="learn-more" href="/learn-more.html">
+                        Learn more
+                      </a>
+                    </p>
+                    <button class="drop-down--btn">Customize theme</button>
+                  </div>
+                  <div class="drop-down--image">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/payment.png"
+                      alt="Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="drop-down--content--item">
+              <div class="drop-down--select-item">
+                <div class="checked">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-2"
+                  />
+
+                  <label for="checkbox-2" class="custom-checkbox">
+                    <span class="dotted-checkbox"></span>
+                    <img
+                      class="checkmark"
+                      src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg"
+                      alt="Checkmark"
+                    />
+                  </label>
+                  <h3 class="drop-down--content--title">
+                    Add your first product
+                  </h3>
+                </div>
+
+                <div class="drop-down--content--description">
+                  <div class="drop-down--text">
+                    <p>
+                      Write a description, add photos, and set pricing for the
+                      products you plan to sell.
+                      <a class="learn-more" href="/learn-more.html">
+                        Learn more
+                      </a>
+                    </p>
+                    <div class="btn-group">
+                      <button class="drop-down--btn">Add product</button>
+                      <button class="drop-down--btn__import">
+                        Import product
+                      </button>
+                    </div>
+                  </div>
+                  <div class="drop-down--image">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/product.png"
+                      alt="Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="drop-down--content--item">
+              <div class="drop-down--select-item">
+                <div class="checked">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-3"
+                  />
+
+                  <label for="checkbox-3" class="custom-checkbox">
+                    <span class="dotted-checkbox"></span>
+                    <img
+                      class="checkmark"
+                      src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg"
+                      alt="Checkmark"
+                    />
+                  </label>
+                  <h3 class="drop-down--content--title">Add a custom domain</h3>
+                </div>
+
+                <div class="drop-down--content--description">
+                  <div class="drop-down--text">
+                    <p>
+                      Your current domain is 222219.my shopify.com but you can
+                      add a custom domain to help customers find your online
+                      store.
+                      <a class="learn-more" href="/learn-more.html">
+                        Learn more
+                      </a>
+                    </p>
+                    <button class="drop-down--btn">Add domain</button>
+                  </div>
+                  <div class="drop-down--image">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/website.png"
+                      alt="Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 4 -->
+            <div class="drop-down--content--item">
+              <div class="drop-down--select-item">
+                <div class="checked">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-4"
+                  />
+
+                  <label for="checkbox-4" class="custom-checkbox">
+                    <span class="dotted-checkbox"></span>
+                    <img
+                      class="checkmark"
+                      src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg"
+                      alt="Checkmark"
+                    />
+                  </label>
+                  <h3 class="drop-down--content--title">Name your store</h3>
+                </div>
+
+                <div class="drop-down--content--description">
+                  <div class="drop-down--text">
+                    <p>
+                      Your temporary store name is currently Davii collections.
+                      The store name appears in your admin and your online
+                      store.
+                      <a class="learn-more" href="/learn-more.html">
+                        Learn more
+                      </a>
+                    </p>
+                    <button class="drop-down--btn">Name store</button>
+                  </div>
+                  <div class="drop-down--image">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                      alt="Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 5 -->
+            <div class="drop-down--content--item">
+              <div class="drop-down--select-item">
+                <div class="checked">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-5"
+                  />
+
+                  <label for="checkbox-5" class="custom-checkbox">
+                    <span class="dotted-checkbox"></span>
+                    <img
+                      class="checkmark"
+                      src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg"
+                      alt="Checkmark"
+                    />
+                  </label>
+                  <h3 class="drop-down--content--title">
+                    Set up a payment provider
+                  </h3>
+                </div>
+
+                <div class="drop-down--content--description">
+                  <div class="drop-down--text">
+                    <p>
+                      Choose a payment provider to start accepting payments.
+                      You’ll need to create an account with the payment provider
+                      and set it up with your Shopify store.
+                      <a class="learn-more" href="/learn-more.html">
+                        Learn more
+                      </a>
+                    </p>
+                    <button class="drop-down--btn">Set up payment</button>
+                  </div>
+                  <div class="drop-down--image">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/name-store.png"
+                      alt="Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 6 -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Ionicons Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
