@@ -276,8 +276,19 @@ progress::-webkit-progress-value {
 }
 
 .drop-down--content {
-  display: none;
-  margin-top: 2rem;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.drop-down--content.active {
+  height: auto;
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  padding-top: 2rem;
 }
 
 .drop-down--content--container {
@@ -289,7 +300,7 @@ progress::-webkit-progress-value {
 
 .drop-down--content--item {
   background-color: #f3f3f3;
-  padding: 1rem;
+  padding: 2rem 1rem;
   border-radius: 0.8rem;
 }
 
@@ -305,6 +316,11 @@ progress::-webkit-progress-value {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  pointer-events: all;
+  visibility: visible;
+  opacity: 1;
+  height: 10rem;
+  transition: all 0.3s;
 }
 
 .drop-down--content--title {
@@ -330,6 +346,7 @@ progress::-webkit-progress-value {
   border-radius: 0.8rem;
   transition: all 0.3s;
   box-shadow: 0 4px 10px rgba(0 0 0/0.2);
+  flex-shrink: 0;
 }
 
 .drop-down--btn:hover,
@@ -388,20 +405,31 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.checked .checkbox:checked + .custom-checkbox .dotted-checkbox {
-  display: none;
-}
-
-.checked .checkbox:checked + .custom-checkbox .checkmark {
-  display: block;
+  cursor: pointer;
 }
 
 .learn-more:any-link {
   display: block;
   color: #005bd3;
   font-weight: 600;
+}
+
+/* active class for accprdion */
+
+.checked.active + .drop-down--content--description {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0;
+  transition: all 0.3s;
+}
+
+.checked.active .dotted-checkbox {
+  display: none;
+}
+
+.checked.active .checkmark {
+  display: inline-block;
 }
 
 /* Medium size screen */
@@ -442,7 +470,7 @@ input[type="checkbox"] {
 }
 
 /* small device */
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   .drop-down--content--description {
     flex-direction: column;
     align-items: flex-start;
@@ -454,5 +482,31 @@ input[type="checkbox"] {
   .btn-group {
     flex-direction: column;
     width: 100%;
+  }
+
+  .drop-down--image {
+    width: 22rem;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .drop-down--image img {
+    width: 100%;
+  }
+
+  .drop-down--btn__import {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 1120px) {
+  .container,
+  .plan {
+    width: 90%;
+  }
+
+  .drop-down--content--description {
+    height: auto;
   }
 }
