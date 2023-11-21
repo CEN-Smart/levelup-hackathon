@@ -466,8 +466,8 @@ input[type="checkbox"] {
   z-index: 9;
   background-color: rgba(0 0 0/0.4);
 }
-.drop-menu--container,
-.alert-container {
+
+.menu {
   box-shadow: 0 15px 35px rgba(0 0 0/0.2);
   position: absolute;
   top: 7rem;
@@ -479,12 +479,14 @@ input[type="checkbox"] {
   border-radius: 0.8rem;
   visibility: hidden;
   opacity: 0;
-  height: 80vh;
-  overflow-y: auto;
   pointer-events: none;
   transform: translateY(-100%);
   pointer-events: none;
   transition: all 0.3s;
+}
+.menu-lg {
+  height: 80vh;
+  overflow-y: auto;
 }
 
 .drop-menu--content {
