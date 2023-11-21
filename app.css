@@ -479,6 +479,9 @@ input[type="checkbox"] {
   border-radius: 0.8rem;
   visibility: hidden;
   opacity: 0;
+  height: 80vh;
+  overflow-y: auto;
+  pointer-events: none;
   transform: translateY(-100%);
   pointer-events: none;
   transition: all 0.3s;
