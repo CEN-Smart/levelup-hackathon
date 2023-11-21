@@ -484,17 +484,6 @@ input[type="checkbox"] {
     width: 100%;
   }
 
-  .drop-down--image {
-    width: 22rem;
-    height: auto;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .drop-down--image img {
-    width: 100%;
-  }
-
   .drop-down--btn__import {
     flex-shrink: 0;
   }
