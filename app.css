@@ -484,10 +484,6 @@ input[type="checkbox"] {
   pointer-events: none;
   transition: 0.5s;
 }
-.menu-lg {
-  height: 80vh;
-  overflow-y: auto;
-}
 
 .drop-menu--content {
   display: flex;
@@ -671,6 +667,10 @@ input[type="checkbox"] {
   .drop-down--container {
     width: 100%;
   }
+
+  html {
+    font-size: 55%;
+  }
 }
 
 /* small device */
@@ -700,6 +700,10 @@ input[type="checkbox"] {
   .drop-menu--container,
   .alert-container {
     width: 70%;
+  }
+
+  html {
+    font-size: 50%;
   }
 }
 
