@@ -313,7 +313,6 @@ progress::-webkit-progress-value {
 .drop-down--select-item {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 .drop-down--content--description {
@@ -325,7 +324,12 @@ progress::-webkit-progress-value {
   pointer-events: all;
   visibility: visible;
   opacity: 1;
-  height: 10rem;
+  height: auto;
+  padding-top: 2rem;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: all 0.3s;
 }
 
@@ -427,6 +431,9 @@ input[type="checkbox"] {
   visibility: hidden;
   pointer-events: none;
   height: 0;
+  padding-top: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: all 0.3s;
 }
 
